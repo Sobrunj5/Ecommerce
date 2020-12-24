@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ecommerce/screen/product/addproduct.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -9,11 +10,33 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: InkWell(
+        onTap: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => AddProduct(),
+              ));
+        },
+        child: Container(
+          padding: EdgeInsets.all(16),
+          decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(16), color: Colors.blue),
+          child: Text(
+            "Add Product",
+            style: TextStyle(
+              color: Colors.white,
+            ),
+          ),
+        ),
+      ),
       body: Container(
-        child:Center(
+        child: Center(
           child: Text("Home"),
         ),
       ),
     );
   }
 }
+
+class AddPoduct {}

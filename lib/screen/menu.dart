@@ -27,21 +27,21 @@ class _MenuState extends State<Menu> {
           Offstage(
             offstage: selectIndex != 1,
             child: TickerMode(
-              enabled: selectIndex != 1,
+              enabled: selectIndex == 1,
               child: Favorite(),
             ),
           ),
           Offstage(
             offstage: selectIndex != 2,
             child: TickerMode(
-              enabled: selectIndex != 2,
+              enabled: selectIndex == 2,
               child: History(),
             ),
           ),
           Offstage(
             offstage: selectIndex != 3,
             child: TickerMode(
-              enabled: selectIndex != 3,
+              enabled: selectIndex == 3,
               child: Account(),
             ),
           )

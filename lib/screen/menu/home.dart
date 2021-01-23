@@ -21,7 +21,8 @@ class _HomeState extends State<Home> {
         child: Container(
           padding: EdgeInsets.all(16),
           decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(16), color: Colors.blue),
+              borderRadius: BorderRadius.circular(16), color: Colors.blue
+              ),
           child: Text(
             "Add Product",
             style: TextStyle(
